@@ -1,0 +1,379 @@
+[
+    {
+        "software": "Apache",
+        "versions": [
+            "2.4.41",
+            "2.4.42"
+        ],
+        "cve_id": "CVE-2020-11984",
+        "title": "Apache HTTP Server mod_proxy_uwsgi buffer overflow",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "A buffer overflow in mod_proxy_uwsgi allows remote attackers to cause denial of service or potentially execute code.",
+        "remediation": "Upgrade to Apache 2.4.46 or later."
+    },
+    {
+        "software": "Apache",
+        "versions": [
+            "2.4.38",
+            "2.4.39",
+            "2.4.40"
+        ],
+        "cve_id": "CVE-2019-0211",
+        "title": "Apache HTTP Server privilege escalation",
+        "cvss": 7.2,
+        "severity": "high",
+        "description": "A privilege escalation vulnerability in Apache HTTP Server allows less privileged users to execute arbitrary code.",
+        "remediation": "Upgrade to Apache 2.4.41 or later."
+    },
+    {
+        "software": "nginx",
+        "versions": [
+            "<=1.18.0"
+        ],
+        "cve_id": "CVE-2021-23017",
+        "title": "nginx DNS resolver off-by-one heap write",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "A vulnerability in nginx DNS resolver allows remote attackers to cause heap memory corruption.",
+        "remediation": "Upgrade to nginx 1.20.1 or later."
+    },
+    {
+        "software": "OpenSSH",
+        "versions": [
+            "7.9",
+            "8.0",
+            "8.1",
+            "8.2"
+        ],
+        "cve_id": "CVE-2020-14145",
+        "title": "OpenSSH observable discrepancy in authentication",
+        "cvss": 5.9,
+        "severity": "medium",
+        "description": "An observable discrepancy in SSH authentication could allow user enumeration.",
+        "remediation": "Upgrade to OpenSSH 8.4 or later."
+    },
+    {
+        "software": "MySQL",
+        "versions": [
+            "8.0.21",
+            "8.0.22"
+        ],
+        "cve_id": "CVE-2021-2022",
+        "title": "MySQL Server: DML unspecified vulnerability",
+        "cvss": 6.5,
+        "severity": "medium",
+        "description": "Vulnerability in the MySQL Server product allows high privileged attacker to cause denial of service.",
+        "remediation": "Upgrade to MySQL 8.0.23 or later."
+    },
+    {
+        "software": "PostgreSQL",
+        "versions": [
+            "12.4",
+            "12.5",
+            "13.0"
+        ],
+        "cve_id": "CVE-2021-3393",
+        "title": "PostgreSQL information disclosure",
+        "cvss": 4.0,
+        "severity": "medium",
+        "description": "A vulnerability in PostgreSQL could allow an unprivileged user to read arbitrary files.",
+        "remediation": "Upgrade to PostgreSQL 13.2, 12.6, or later."
+    },
+    {
+        "software": "Apache Tomcat",
+        "versions": [
+            "9.0.38",
+            "9.0.39"
+        ],
+        "cve_id": "CVE-2021-30640",
+        "title": "Apache Tomcat Information Disclosure",
+        "cvss": 5.3,
+        "severity": "medium",
+        "description": "A vulnerability in Tomcat's JNDI Realm allows information disclosure via the directory listing.",
+        "remediation": "Upgrade to Apache Tomcat 9.0.45 or later."
+    },
+    {
+        "software": "Microsoft IIS",
+        "versions": [
+            "10.0"
+        ],
+        "cve_id": "CVE-2021-31166",
+        "title": "IIS HTTP Protocol Stack Remote Code Execution",
+        "cvss": 9.8,
+        "severity": "critical",
+        "description": "A remote code execution vulnerability exists in the HTTP protocol stack in IIS.",
+        "remediation": "Apply Microsoft security update."
+    },
+    {
+        "software": "PHP",
+        "versions": [
+            "7.4.3",
+            "7.4.4"
+        ],
+        "cve_id": "CVE-2021-21703",
+        "title": "PHP FPM local privilege escalation",
+        "cvss": 8.8,
+        "severity": "high",
+        "description": "A vulnerability in PHP-FPM could allow a local attacker to escalate privileges.",
+        "remediation": "Upgrade to PHP 7.4.28 or 8.0.16."
+    },
+    {
+        "software": "OpenSSL",
+        "versions": [
+            "1.1.1h",
+            "1.1.1i"
+        ],
+        "cve_id": "CVE-2021-3449",
+        "title": "OpenSSL NULL pointer dereference",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "A NULL pointer dereference in OpenSSL could cause a denial of service.",
+        "remediation": "Upgrade to OpenSSL 1.1.1k or later."
+    },
+    {
+        "software": "Apache",
+        "versions": [
+            "2.4.29"
+        ],
+        "cve_id": "CVE-2018-1312",
+        "title": "Apache HTTP Server weak Digest auth nonce",
+        "cvss": 6.8,
+        "severity": "medium",
+        "description": "Weak Digest auth nonce generation could allow replay attacks.",
+        "remediation": "Upgrade to Apache 2.4.33 or later."
+    },
+    {
+        "software": "nginx",
+        "versions": [
+            "1.17.3",
+            "1.17.4"
+        ],
+        "cve_id": "CVE-2019-20372",
+        "title": "nginx HTTP request smuggling",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "An HTTP request smuggling vulnerability in nginx could allow cache poisoning.",
+        "remediation": "Upgrade to nginx 1.17.7 or later."
+    },
+    {
+        "software": "Apache Tomcat",
+        "versions": [
+            "8.5.50"
+        ],
+        "cve_id": "CVE-2020-9484",
+        "title": "Tomcat remote code execution via session persistence",
+        "cvss": 7.0,
+        "severity": "high",
+        "description": "A remote code execution vulnerability when using persistent session storage.",
+        "remediation": "Upgrade to Tomcat 8.5.55 or later."
+    },
+    {
+        "software": "OpenSSH",
+        "versions": [
+            "<=7.9"
+        ],
+        "cve_id": "CVE-2018-15473",
+        "title": "OpenSSH user enumeration",
+        "cvss": 5.3,
+        "severity": "medium",
+        "description": "OpenSSH through 7.9 allows user enumeration due to different responses.",
+        "remediation": "Upgrade to OpenSSH 8.0 or later."
+    },
+    {
+        "software": "MySQL",
+        "versions": [
+            "5.7.32"
+        ],
+        "cve_id": "CVE-2021-2020",
+        "title": "MySQL Server: Optimizer unspecified vulnerability",
+        "cvss": 6.5,
+        "severity": "medium",
+        "description": "Vulnerability in MySQL Server could allow high privileged attacker to cause hang or crash.",
+        "remediation": "Upgrade to MySQL 5.7.33 or later."
+    },
+    {
+        "software": "PostgreSQL",
+        "versions": [
+            "11.9"
+        ],
+        "cve_id": "CVE-2020-25695",
+        "title": "PostgreSQL SQL injection in pg_dump",
+        "cvss": 6.5,
+        "severity": "medium",
+        "description": "A SQL injection vulnerability in pg_dump could allow an attacker to execute arbitrary SQL.",
+        "remediation": "Upgrade to PostgreSQL 11.10 or later."
+    },
+    {
+        "software": "PHP",
+        "versions": [
+            "8.0.0",
+            "8.0.1"
+        ],
+        "cve_id": "CVE-2021-21707",
+        "title": "PHP special character parsing in fopen()",
+        "cvss": 5.3,
+        "severity": "medium",
+        "description": "A vulnerability in fopen() could lead to information disclosure.",
+        "remediation": "Upgrade to PHP 8.0.2 or later."
+    },
+    {
+        "software": "Apache",
+        "versions": [
+            "2.4.43"
+        ],
+        "cve_id": "CVE-2020-1927",
+        "title": "Apache mod_proxy_ftp SSRF",
+        "cvss": 6.1,
+        "severity": "medium",
+        "description": "A server-side request forgery vulnerability in mod_proxy_ftp.",
+        "remediation": "Upgrade to Apache 2.4.46."
+    },
+    {
+        "software": "Microsoft IIS",
+        "versions": [
+            "10.0.17763"
+        ],
+        "cve_id": "CVE-2021-31975",
+        "title": "IIS Server Memory Corruption",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "A memory corruption vulnerability in IIS could lead to denial of service.",
+        "remediation": "Apply Microsoft security update."
+    },
+    {
+        "software": "Apache Tomcat",
+        "versions": [
+            "10.0.0"
+        ],
+        "cve_id": "CVE-2021-30639",
+        "title": "Tomcat incomplete cleanup of concurrent resources",
+        "cvss": 5.9,
+        "severity": "medium",
+        "description": "Improper resource cleanup could lead to information disclosure.",
+        "remediation": "Upgrade to Tomcat 10.0.5."
+    },
+    {
+        "software": "nginx",
+        "versions": [
+            "1.19.5"
+        ],
+        "cve_id": "CVE-2021-23016",
+        "title": "nginx DNS resolver memory exhaustion",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "A memory exhaustion vulnerability in the DNS resolver of nginx.",
+        "remediation": "Upgrade to nginx 1.20.0 or later."
+    },
+    {
+        "software": "OpenSSL",
+        "versions": [
+            "1.1.1l"
+        ],
+        "cve_id": "CVE-2022-0778",
+        "title": "OpenSSL infinite loop in BN_mod_sqrt()",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "A crafted certificate can cause infinite loop and denial of service.",
+        "remediation": "Upgrade to OpenSSL 1.1.1n or later."
+    },
+    {
+        "software": "PHP",
+        "versions": [
+            "7.4.22"
+        ],
+        "cve_id": "CVE-2021-21708",
+        "title": "PHP use-after-free in FPM",
+        "cvss": 9.8,
+        "severity": "critical",
+        "description": "A use-after-free vulnerability in PHP-FPM could lead to remote code execution.",
+        "remediation": "Upgrade to PHP 7.4.25 or 8.0.12."
+    },
+    {
+        "software": "Apache",
+        "versions": [
+            "2.4.48"
+        ],
+        "cve_id": "CVE-2021-42013",
+        "title": "Apache path traversal and remote code execution",
+        "cvss": 9.8,
+        "severity": "critical",
+        "description": "A path traversal flaw in Apache 2.4.49/2.4.50 allows RCE.",
+        "remediation": "Upgrade to Apache 2.4.51 immediately."
+    },
+    {
+        "software": "Apache",
+        "versions": [
+            "2.4.49",
+            "2.4.50"
+        ],
+        "cve_id": "CVE-2021-41773",
+        "title": "Apache path traversal and file disclosure",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "A path traversal vulnerability in Apache 2.4.49 allows remote attackers to read arbitrary files.",
+        "remediation": "Upgrade to Apache 2.4.51."
+    },
+    {
+        "software": "nginx",
+        "versions": [
+            "1.21.0",
+            "1.21.1"
+        ],
+        "cve_id": "CVE-2021-3618",
+        "title": "nginx ALPACA protocol confusion",
+        "cvss": 7.4,
+        "severity": "high",
+        "description": "A vulnerability in nginx could allow man-in-the-middle attackers to redirect traffic.",
+        "remediation": "Upgrade to nginx 1.21.3."
+    },
+    {
+        "software": "OpenSSH",
+        "versions": [
+            "8.5",
+            "8.6"
+        ],
+        "cve_id": "CVE-2021-41617",
+        "title": "OpenSSH privilege escalation via sshd",
+        "cvss": 7.0,
+        "severity": "high",
+        "description": "A vulnerability in sshd allows privilege escalation on some systems.",
+        "remediation": "Upgrade to OpenSSH 8.8 or later."
+    },
+    {
+        "software": "MySQL",
+        "versions": [
+            "8.0.26"
+        ],
+        "cve_id": "CVE-2021-35604",
+        "title": "MySQL InnoDB vulnerability",
+        "cvss": 4.9,
+        "severity": "medium",
+        "description": "Vulnerability in InnoDB could allow a high privileged attacker to cause denial of service.",
+        "remediation": "Upgrade to MySQL 8.0.27."
+    },
+    {
+        "software": "PostgreSQL",
+        "versions": [
+            "13.3"
+        ],
+        "cve_id": "CVE-2021-3677",
+        "title": "PostgreSQL memory disclosure",
+        "cvss": 6.5,
+        "severity": "medium",
+        "description": "A vulnerability could allow an attacker to read arbitrary memory.",
+        "remediation": "Upgrade to PostgreSQL 13.4."
+    },
+    {
+        "software": "Microsoft IIS",
+        "versions": [
+            "10.0.20348"
+        ],
+        "cve_id": "CVE-2022-21907",
+        "title": "IIS HTTP request smuggling",
+        "cvss": 7.5,
+        "severity": "high",
+        "description": "A request smuggling vulnerability in IIS could lead to cache poisoning.",
+        "remediation": "Apply Microsoft security update."
+    }
+]
