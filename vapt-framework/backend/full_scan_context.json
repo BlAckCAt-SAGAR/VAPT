@@ -1,0 +1,373 @@
+{
+  "target": "example.com",
+  "target_type": "domain",
+  "recon_data": {
+    "resolved_ips": [
+      "172.66.147.243",
+      "104.20.23.154",
+      "2606:4700:9ae5:72db:f2de:a68:ef6b:ff98"
+    ],
+    "dns_records": {
+      "A": [
+        "172.66.147.243",
+        "104.20.23.154"
+      ],
+      "AAAA": [
+        "2606:4700:9ae5:72db:f2de:a68:ef6b:ff98"
+      ],
+      "MX": [
+        "0 ."
+      ],
+      "NS": [
+        "elliott.ns.cloudflare.com.",
+        "hera.ns.cloudflare.com."
+      ],
+      "TXT": [
+        "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+        "\"v=spf1 -all\""
+      ],
+      "SOA": [
+        "elliott.ns.cloudflare.com. dns.cloudflare.com. 2405749864 10000 2400 604800 1800"
+      ]
+    },
+    "whois": {
+      "registrar": "RESERVED-Internet Assigned Numbers Authority",
+      "creation_date": "1995-08-14T04:00:00+00:00",
+      "expiration_date": "2026-08-13T04:00:00+00:00",
+      "updated_date": "2026-01-16T18:26:50+00:00",
+      "name_servers": [
+        "elliott.ns.cloudflare.com",
+        "hera.ns.cloudflare.com"
+      ]
+    },
+    "subdomains": [],
+    "reverse_dns": null
+  },
+  "errors": [],
+  "modules_executed": [
+    "whois",
+    "dns",
+    "http_scanner",
+    "port_scanner",
+    "service_detector",
+    "risk_scorer"
+  ],
+  "execution_time_seconds": 73.58289051055908,
+  "scanner_results": {
+    "target": "example.com",
+    "scan_time": "2026-06-22T09:43:34.609793+00:00",
+    "http_finding": {
+      "url": "https://example.com:443",
+      "status_code": 200,
+      "headers": {
+        "date": "Mon, 22 Jun 2026 09:43:35 GMT",
+        "content-type": "text/html",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "server": "cloudflare",
+        "last-modified": "Sat, 20 Jun 2026 20:45:06 GMT",
+        "allow": "GET, HEAD",
+        "age": "5",
+        "cf-cache-status": "HIT",
+        "content-encoding": "gzip",
+        "cf-ray": "a0fa4f3eb85bd3ad-FRA"
+      },
+      "cookies": [],
+      "server_software": null,
+      "server_version": null,
+      "is_https": true,
+      "ssl_valid": true,
+      "ssl_expiry": "2026-08-29T21:41:26",
+      "ssl_issuer": "SSL Corporation",
+      "header_issues": [
+        {
+          "header_name": "Content-Security-Policy",
+          "severity": "high",
+          "issue": "Missing Content-Security-Policy header",
+          "recommendation": "Add a strict CSP header to prevent XSS and data injection attacks.",
+          "current_value": null
+        },
+        {
+          "header_name": "X-Content-Type-Options",
+          "severity": "medium",
+          "issue": "Missing X-Content-Type-Options header",
+          "recommendation": "Set 'X-Content-Type-Options: nosniff' to prevent MIME sniffing.",
+          "current_value": null
+        },
+        {
+          "header_name": "X-Frame-Options",
+          "severity": "medium",
+          "issue": "Missing X-Frame-Options header",
+          "recommendation": "Set 'X-Frame-Options: DENY' to prevent clickjacking attacks.",
+          "current_value": null
+        },
+        {
+          "header_name": "Strict-Transport-Security",
+          "severity": "high",
+          "issue": "Missing HSTS header",
+          "recommendation": "Enable HTTP Strict Transport Security to enforce HTTPS.",
+          "current_value": null
+        },
+        {
+          "header_name": "Referrer-Policy",
+          "severity": "low",
+          "issue": "Missing Referrer-Policy header",
+          "recommendation": "Set a Referrer-Policy to control referrer information leakage.",
+          "current_value": null
+        },
+        {
+          "header_name": "Permissions-Policy",
+          "severity": "low",
+          "issue": "Missing Permissions-Policy header",
+          "recommendation": "Restrict browser features using Permissions-Policy.",
+          "current_value": null
+        }
+      ],
+      "error": null
+    },
+    "header_issues": [
+      {
+        "header_name": "Content-Security-Policy",
+        "severity": "high",
+        "issue": "Missing Content-Security-Policy header",
+        "recommendation": "Add a strict CSP header to prevent XSS and data injection attacks.",
+        "current_value": null
+      },
+      {
+        "header_name": "X-Content-Type-Options",
+        "severity": "medium",
+        "issue": "Missing X-Content-Type-Options header",
+        "recommendation": "Set 'X-Content-Type-Options: nosniff' to prevent MIME sniffing.",
+        "current_value": null
+      },
+      {
+        "header_name": "X-Frame-Options",
+        "severity": "medium",
+        "issue": "Missing X-Frame-Options header",
+        "recommendation": "Set 'X-Frame-Options: DENY' to prevent clickjacking attacks.",
+        "current_value": null
+      },
+      {
+        "header_name": "Strict-Transport-Security",
+        "severity": "high",
+        "issue": "Missing HSTS header",
+        "recommendation": "Enable HTTP Strict Transport Security to enforce HTTPS.",
+        "current_value": null
+      },
+      {
+        "header_name": "Referrer-Policy",
+        "severity": "low",
+        "issue": "Missing Referrer-Policy header",
+        "recommendation": "Set a Referrer-Policy to control referrer information leakage.",
+        "current_value": null
+      },
+      {
+        "header_name": "Permissions-Policy",
+        "severity": "low",
+        "issue": "Missing Permissions-Policy header",
+        "recommendation": "Restrict browser features using Permissions-Policy.",
+        "current_value": null
+      }
+    ],
+    "cve_matches": [],
+    "open_ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "HTTP",
+        "banner": "HTTP/1.1 403 Forbidden\r\nDate: Mon, 22 Jun 2026 09:43:38 GMT\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Length: 17\r\nConnection: close\r\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\r\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\r\nReferrer-Policy: same-origin\r\nX-Frame-Options: SAMEORIGIN\r\nServer: cloudflare\r\nCF-RAY: a0fa4f53dfa99a95-NAG",
+        "version": "cloudflare",
+        "error": null
+      },
+      {
+        "port": 110,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "POP3",
+        "banner": null,
+        "version": null,
+        "error": null
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "HTTP",
+        "banner": "HTTP/1.1 400 Bad Request\r\nServer: cloudflare\r\nDate: Mon, 22 Jun 2026 09:43:38 GMT\r\nContent-Type: text/html\r\nContent-Length: 253\r\nConnection: close\r\nCF-RAY: -",
+        "version": "cloudflare",
+        "error": null
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "HTTP",
+        "banner": "HTTP/1.1 403 Forbidden\r\nDate: Mon, 22 Jun 2026 09:43:38 GMT\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Length: 17\r\nConnection: close\r\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\r\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\r\nReferrer-Policy: same-origin\r\nX-Frame-Options: SAMEORIGIN\r\nServer: cloudflare\r\nCF-RAY: a0fa4f53fdc370aa-NAG",
+        "version": "cloudflare",
+        "error": null
+      }
+    ],
+    "security_score": 97.2,
+    "summary": {
+      "total_findings": 8,
+      "critical_count": 0,
+      "high_count": 0,
+      "medium_count": 4,
+      "low_count": 4,
+      "info_count": 0,
+      "average_cvss": 4.4,
+      "highest_cvss": 6.3
+    },
+    "errors": [],
+    "modules_executed": [
+      "http_scanner",
+      "port_scanner",
+      "service_detector"
+    ]
+  },
+  "risk_report": {
+    "target": "example.com",
+    "target_type": "domain",
+    "overall_score": 97.2,
+    "grade": "A",
+    "grade_description": "Excellent \u2013 Low risk",
+    "summary": {
+      "total_findings": 8,
+      "critical_count": 0,
+      "high_count": 0,
+      "medium_count": 4,
+      "low_count": 4,
+      "info_count": 0,
+      "average_cvss": 4.4,
+      "highest_cvss": 6.3
+    },
+    "findings": [
+      {
+        "finding_id": "header-Strict-Transport-Security",
+        "title": "Missing or misconfigured: Strict-Transport-Security",
+        "description": "Missing HSTS header",
+        "raw_cvss": 5.3,
+        "adjusted_cvss": 6.3,
+        "severity": "medium",
+        "category": "header",
+        "affected_asset": "example.com",
+        "remediation": "Enable HTTP Strict Transport Security to enforce HTTPS.",
+        "source": "http_scanner",
+        "environmental_modifiers": [
+          "publicly_accessible"
+        ]
+      },
+      {
+        "finding_id": "header-Content-Security-Policy",
+        "title": "Missing or misconfigured: Content-Security-Policy",
+        "description": "Missing Content-Security-Policy header",
+        "raw_cvss": 4.3,
+        "adjusted_cvss": 5.3,
+        "severity": "medium",
+        "category": "header",
+        "affected_asset": "example.com",
+        "remediation": "Add a strict CSP header to prevent XSS and data injection attacks.",
+        "source": "http_scanner",
+        "environmental_modifiers": [
+          "publicly_accessible"
+        ]
+      },
+      {
+        "finding_id": "header-X-Frame-Options",
+        "title": "Missing or misconfigured: X-Frame-Options",
+        "description": "Missing X-Frame-Options header",
+        "raw_cvss": 4.3,
+        "adjusted_cvss": 5.3,
+        "severity": "medium",
+        "category": "header",
+        "affected_asset": "example.com",
+        "remediation": "Set 'X-Frame-Options: DENY' to prevent clickjacking attacks.",
+        "source": "http_scanner",
+        "environmental_modifiers": [
+          "publicly_accessible"
+        ]
+      },
+      {
+        "finding_id": "header-X-Content-Type-Options",
+        "title": "Missing or misconfigured: X-Content-Type-Options",
+        "description": "Missing X-Content-Type-Options header",
+        "raw_cvss": 3.1,
+        "adjusted_cvss": 4.1,
+        "severity": "medium",
+        "category": "header",
+        "affected_asset": "example.com",
+        "remediation": "Set 'X-Content-Type-Options: nosniff' to prevent MIME sniffing.",
+        "source": "http_scanner",
+        "environmental_modifiers": [
+          "publicly_accessible"
+        ]
+      },
+      {
+        "finding_id": "header-Referrer-Policy",
+        "title": "Missing or misconfigured: Referrer-Policy",
+        "description": "Missing Referrer-Policy header",
+        "raw_cvss": 2.6,
+        "adjusted_cvss": 3.6,
+        "severity": "low",
+        "category": "header",
+        "affected_asset": "example.com",
+        "remediation": "Set a Referrer-Policy to control referrer information leakage.",
+        "source": "http_scanner",
+        "environmental_modifiers": [
+          "publicly_accessible"
+        ]
+      },
+      {
+        "finding_id": "header-Permissions-Policy",
+        "title": "Missing or misconfigured: Permissions-Policy",
+        "description": "Missing Permissions-Policy header",
+        "raw_cvss": 2.6,
+        "adjusted_cvss": 3.6,
+        "severity": "low",
+        "category": "header",
+        "affected_asset": "example.com",
+        "remediation": "Restrict browser features using Permissions-Policy.",
+        "source": "http_scanner",
+        "environmental_modifiers": [
+          "publicly_accessible"
+        ]
+      },
+      {
+        "finding_id": "port-110",
+        "title": "Open port 110 (pop3)",
+        "description": "Port 110 is open and running pop3. Banner: None",
+        "raw_cvss": 2.5,
+        "adjusted_cvss": 3.5,
+        "severity": "low",
+        "category": "port",
+        "affected_asset": "example.com:110",
+        "remediation": "Close port 110 if not needed, or restrict access via firewall.",
+        "source": "port_scanner",
+        "environmental_modifiers": [
+          "publicly_accessible"
+        ]
+      },
+      {
+        "finding_id": "port-8080",
+        "title": "Open port 8080 (http)",
+        "description": "Port 8080 is open and running http. Banner: HTTP/1.1 403 Forbidden\r\nDate: Mon, 22 Jun 2026 09:43:38 GMT\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Length: 17\r\nConnection: close\r\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\r\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\r\nReferrer-Policy: same-origin\r\nX-Frame-Options: SAMEORIGIN\r\nServer: cloudflare\r\nCF-RAY: a0fa4f53fdc370aa-NAG",
+        "raw_cvss": 2.5,
+        "adjusted_cvss": 3.5,
+        "severity": "low",
+        "category": "port",
+        "affected_asset": "example.com:8080",
+        "remediation": "Close port 8080 if not needed, or restrict access via firewall.",
+        "source": "port_scanner",
+        "environmental_modifiers": [
+          "publicly_accessible"
+        ]
+      }
+    ],
+    "recommendations": [
+      "Enable HTTP Strict Transport Security (HSTS)",
+      "Implement a Content Security Policy (CSP)"
+    ],
+    "generated_at": "2026-06-22T09:43:40.345009+00:00"
+  }
+}
