@@ -1,3 +1,35 @@
+# Module 4: Report Generator - The Showpiece
+
+"""
+Professional Security Report Generator.
+Takes the scan_context from the pipeline and produces:
+- Executive Summary (for management)
+- Technical Findings (detailed)
+- Risk Score Visualization
+- Remediation Roadmap
+- JSON, HTML, and PDF output
+"""
+
+# ============================================================
+# FILE STRUCTURE
+# ============================================================
+# backend/modules/report_generator/
+# ├── __init__.py
+# ├── data_contracts.py      # Report data structures
+# ├── html_templates.py       # HTML/CSS templates
+# ├── report_builder.py       # Assembles report sections
+# ├── pdf_generator.py        # HTML → PDF conversion
+# ├── report_orchestrator.py  # Main orchestrator
+# └── tests/
+#     ├── __init__.py
+#     ├── test_report_builder.py
+#     └── test_report_orchestrator.py
+
+
+# ============================================================
+# 1. data_contracts.py
+# ============================================================
+"""
 Data contracts for the Report Generator module.
 """
 
