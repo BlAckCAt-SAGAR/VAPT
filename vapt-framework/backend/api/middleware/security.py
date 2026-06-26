@@ -2,6 +2,8 @@
 Security middleware: CORS, CSP headers, rate limiting.
 """
 
+from urllib import response
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
@@ -30,7 +32,10 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers["Server"] = "VAPT-Framework"
         
         # Remove sensitive headers
-        response.headers.pop("X-Powered-By", None)
+        try:
+            del response.headers["X-Powered-By"]
+        except (KeyError, TypeError):
+            pass
         
         return response
 
